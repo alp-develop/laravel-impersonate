@@ -1,0 +1,12 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - src
+    level: 8
+    ignoreErrors:
+        - '#Call to an undefined method Illuminate\\Contracts\\Auth\\StatefulGuard::getProvider\(\)#'
+        - '#return type has no value type specified in iterable type array#'
+        - '#has parameter \$data with no value type specified in iterable type array#'
+        - '#Trait .+ is used zero times and is not analysed#'
